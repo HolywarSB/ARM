@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АРМ кредитного менеджера</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <header class="credit_form_header">
+                    <h1>Форма рассчета кредита</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row credit_form_full">
+            <div class="col">
+                <div class="prompt">Для выполнения рассчета кредита заполните нижеперечисленные формы</div>
+            </div>
+        </div>
+        <div class="row credit_form_full">
+            <div class="col-4">
+                <div class="form_inputText_custom"><div class="prompt_form">ФИО:</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" id="form_name"  placeholder="Иванов Иван Иванович"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                <div class="form_inputText_custom"><div class="prompt_form">Номер телефона:</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control jmp__input_tel" id="form_phone"  placeholder="+7(999)999-99-99"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+                    <script>
+                        $(function() {
+                            $('.jmp__input_tel').mask('+7(000)000-00-00');
+                        });
+                    </script> 
+
+                    
+
+                <div class="form_inputText_custom"><div class="prompt_form">ИНН:</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" id="form_inn" maxlength="6" placeholder="6 цифр" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                <div class="little_form">
+                    <div class="form_inputText_custom">
+                        <div class="prompt_form">Возраст:</div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3" id="form_age_css">
+                        <input type="text" maxlength="2" class="form-control" id="form_age"  placeholder="18" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="form_inputText_custom"><div class="prompt_form">Оф. доход (руб):</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control form_custom" id="form_salary" placeholder="44000" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                <div class="form_inputText_custom"><div class="prompt_form">Расходы(руб):</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control form_custom" id="form_costs" placeholder="15000" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                <div class="little_form">
+                    <div class="form_inputText_custom">
+                        <div class="prompt_form">Стаж работы (мес):</div>
+                    </div>
+                        <div class="input-group input-group-sm mb-3" id="form_experience_css">
+                            <input type="text"  class="form-control form_custom" id="form_experience" maxlength="3" placeholder="6" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                </div>
+            </div>
+                
+            <div class="col-4">
+                <div class="form_inputText_custom"><div class="prompt_form">Сумма кредита(руб):</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control form_custom" id="form_sum" placeholder="100000" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                <div class="form_inputText_custom"><div class="prompt_form">Срок кредита(мес):</div></div>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" maxlength="3" class="form-control form_custom" id="form_date" placeholder="6" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                <div class="little_form">
+                    <div class="form_inputText_custom">
+                        <div class="prompt_form">Процентная ставка (%):</div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3" id="form_rate_css">
+                        <input type="text" maxlength="6" class="form-control form_custom" id="form_rate" placeholder="10" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="credit_form">
+                    
+                </div>
+            </div> 
+        </div>
+        <div class="row credit_form_full">
+            <div class="col-7">
+                <div class="button">
+                    <button type="button" id="bank_start" class="btn btn-success">Рассчитать</button>
+                    <button type="button" id="bank_client_swith" class="btn btn-warning btn_custom">Найти клиента<img src="img/icon-search.svg" alt="" id="search_svg"></button>
+                    <div class="input-group input-group-sm mb-3" id="form_Search_Client">
+                        <input type="text" class="form-control form_custom" id="Search_Client" maxlength="6" placeholder="Введите ИНН" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row credit_form_view">
+            <div class="col-7">
+                <div class="css_view">
+                    <div class="form_header">
+                        <h4 class="form_css_h4">Данные клиента:</h4>
+                        <div class="form_css">
+                            <div id="form_output_approv"></div><img src="" class="img_view" alt="" height="20">
+                        </div>
+                        <div class="form_css" id="form_output_name"></div>
+                        <div class="form_css" id="form_output_age"></div>
+                        <div class="form_css" id="form_output_inn"></div>
+                        <div class="form_css">
+                        <div id="form_output_phone"></div><a href="tel:" id="form_output_phone_a"></a>
+                        </div>
+                        <div class="form_css" id="form_output_credit"></div>
+                        <div class="form_css" id="form_output_sum"></div>
+                        <div class="form_css" id="form_output_date"></div>
+                        <div class="form_css" id="form_output_rate"></div>
+                    </div>
+                    <div id="form_main_create">
+
+                    </div>
+                    <div class="form_output justify-content-between" id="newDiv">
+                        <div id="Month" class="month_cust"></div>
+                        <div id="ResultHome"></div>
+                        <div id="MainRateHome"></div>
+                        <div id="MainDebtHome"></div>
+                        <div id="MainCreditBalance"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col Local_storage_col">
+                <div class="Local_storage">
+                    <h4>База клиентов:</h4>
+                    <div id="Local_storage_view">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-center ftr_back">
+                <div class="col-3">
+                    <div class="ftr">Created by Sergei Bugrov</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

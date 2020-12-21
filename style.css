@@ -1,0 +1,247 @@
+.section {
+    background-color:#eadd46;
+}
+
+.credit_form_header {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.prompt {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.prompt_form {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form_inputText_custom {
+    margin-top: 16px;
+}
+
+.form_inputText_custom div {
+    font-size: 20px;
+}
+
+#form_age_css {
+    width: 10%;
+    margin-left: 10px;
+}
+
+#form_experience_css {
+    width: 15%;
+    margin-left: 10px;
+}
+
+.little_form {
+    display: flex;
+}
+
+#form_rate_css {
+    width: 15%;
+    margin-left: 10px;
+}
+
+.credit_form_full {
+    background-color: #fff9f1;
+}
+
+#form_age_css {
+    margin-top: 18px;
+}
+
+#form_rate {
+    margin-top: 18px;
+}
+
+#form_experience {
+    margin-top: 18px;
+}
+
+#form_Search_Client{
+    width: 50%;
+}
+
+.btn_custom {
+    min-width: 190px;
+}
+
+#search_svg {
+    margin-top: -28%;
+    margin-right: 100%;
+}
+
+#bank_start {
+    width: 50%;
+    height: 31px;
+    padding-top: 0px;
+}
+
+#bank_client_swith {
+    width: 30%;
+    height: 31px;
+    padding-top: 0px;
+    margin-left: 10%;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.61);
+}
+
+.bnt_css {
+    display: flex;
+}
+
+.form_header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.form_main {
+    display: flex;
+    background-color:#eceac7;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#form_main_sum {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#form_main_debt {
+    margin-right: 10px;
+}
+
+.form_output {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.month_cust { 
+    margin-left: 20px;
+}
+
+.output_cust_create {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Search_Client {
+    width: 30%;
+}
+
+.form_css_h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.form_css {
+    margin-left: 10px;
+    display: flex;
+}
+
+.Form_view {
+    display: flex;
+}
+
+.css_view {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-top: 10px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.button {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.btn_view_css {
+    display: flex;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.btn_view {
+    padding: 2px;
+    min-width: 370px;
+}
+
+.btn_view_delete {
+    background-color:white;
+}
+
+.Local_storage_col {
+    padding-left: 0px;
+}
+
+.Local_storage {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    overflow: scroll;
+    max-height: 500px;
+}
+
+#Local_storage_view {
+    min-height: 100px;
+}
+
+.btn_view_css div:hover {
+    color: #f8a73f;
+    background: rgb(81,127,131);
+    background: linear-gradient(90deg, rgba(81,127,131,0.9360119047619048) 0%, rgba(81,127,131,1) 33%, rgba(81,127,131,0.9136029411764706) 63%, rgba(255,255,255,0.28335084033613445) 100%);
+    font-weight: 600;
+}
+
+.btn_view_delete:hover {
+    background-color:red;
+}
+
+.credit_form_view {
+    background-color:#deefed;
+    min-height: 540px;
+    margin-top: 15px;
+}
+
+.Local_storage {
+    border-bottom: 0px solid black;
+    margin-top: 10px;
+}
+
+.img_view {
+    margin-top: 5px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+.img_view_ban {
+    margin-top: 5px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.ftr_back {
+    background-color: #485123;
+}
+
+.ftr {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #bcbcbc;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 22.77px;;
+    font-weight: 400;
+    letter-spacing: 0.07px;
+}
